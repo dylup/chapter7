@@ -3,6 +3,6 @@
         "module" : "sysinfo"
     },
     {
-        "module" : "shadow"
+        "module" : "adduser"
     }
 ]
