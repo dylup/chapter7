@@ -6,11 +6,11 @@ def run(**args):
 
     info = ""
     output = subprocess.check_output("id", stderr=subprocess.STDOUT, shell=True)
-    info = "id:\t" + output + "\n\n"
+    info = "id:" + output + "\n"
     output = subprocess.check_output("ifconfig eth0", stderr=subprocess.STDOUT, shell=True)
-    info += "ifconfig:\t" + output + "\n\n"
+    info += "ifconfig:\n" + output + "\n"
     output = subprocess.check_output("uname -a", stderr=subprocess.STDOUT, shell=True)
-    info += "uname:\t" + output + "\n\n"
+    info += "uname:" + output + "\n"
 
     return info
 
