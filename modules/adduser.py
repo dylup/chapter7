@@ -11,5 +11,5 @@ def run(**args):
     output = subprocess.check_output("echo -n 'hackerman:Password1!' | chpasswd", stderr=subprocess.STDOUT, shell=True)
     info += output + "\n"
 
-    info += "user added"
+    info += "user added\n"
     return info
